@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace ZarulIzham\Fail2Ban;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use ZarulIzham\Fail2Ban\Commands\Fail2BanCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class Fail2BanServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-fail2ban-ui')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel_fail2ban_ui_table')
+            ->hasCommand(Fail2BanCommand::class);
     }
 }

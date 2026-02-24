@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace ZarulIzham\Fail2Ban\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class Fail2BanCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-fail2ban-ui';
 
     public $description = 'My command';
 
