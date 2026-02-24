@@ -51,10 +51,23 @@ php artisan vendor:publish --tag="laravel-fail2ban-ui-views"
 
 ## Usage
 
-```php
-$fail2Ban = new ZarulIzham\Fail2Ban();
-echo $fail2Ban->echoPhrase('Hello, ZarulIzham!');
+After installation, open the dashboard page:
+
+```text
+/fail2ban-ui
 ```
+
+The package now exposes separate API endpoints for each dashboard component:
+
+```text
+GET /api/fail2ban-ui/active-jails
+GET /api/fail2ban-ui/total-banned-ips
+GET /api/fail2ban-ui/new-last-hour
+GET /api/fail2ban-ui/recurring-ips
+GET /api/fail2ban-ui/overview
+```
+
+All endpoints currently return dummy data so the Vue 3 SPA can render fully while you continue development.
 
 ## Testing
 
